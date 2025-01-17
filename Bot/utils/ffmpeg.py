@@ -63,7 +63,7 @@ async def ffmpeg_progress(cmd, file, progress, now, send_msg, ps_name,log=None):
                 e_size = humanbytes(size) + " of ~" + humanbytes((size / per) * 100)
                 eta = time_formatter(some_eta)
                 try:
-                    await send_msg.edit(f'{ps_name}\n{progress_str}' + f'GROSS: {e_size}\n\nETA: {eta}',reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Owner", url = 'https://t.me/sohailkhan_indianime')]]))
+                    await send_msg.edit(f'{ps_name}\n{progress_str}' + f'GROSS: {e_size}\n\nETA: {eta}',reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Owner", url = 'https://t.me/r4h4t_69')]]))
                 except Exception as e:
                     LOG.warn('Error While Editing FFMPEG Status {e}')    
                 if log != None:
