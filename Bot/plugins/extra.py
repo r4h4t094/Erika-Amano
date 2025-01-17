@@ -5,5 +5,5 @@ from Bot import TRIGGERS as trg, OWNER_ID
 
 @Client.on_message(filters.user(OWNER_ID) & filters.command('restart', prefixes=trg))
 async def restart_bot(client: Client, message: Message):  
-    msg = await message.reply("Restarting", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Dev', url='https://t.me/sohailkhan_indianime')]]))
+    msg = await message.reply("Restarting", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Dev', url='https://t.me/r4h4t_69')]]))
     os.execl(sys.executable, sys.executable, "-m", "Bot")  
