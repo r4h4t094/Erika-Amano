@@ -1,8 +1,12 @@
 FROM python:3.9.2-slim-buster
-ENV DEBIAN_FRONTEND=noninteractive
-ENV TZ="Asia/Kolkata"
-RUN apt -qq update && apt -qq install -y ffmpeg mediainfo build-essential
+
+WORKDIR /usr/src/app
+RUN chmod 777 /usr/src/app
+
+RUN apt -qq update && apt -qq install -y python3-dev mediainfo ffmpeg build-essentials
+
 COPY . .
-RUN python3 -m pip install --upgrade pip 
-RUN pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+#CMD ["bash","pkg.sh"]
 CMD ["bash","run.sh"]
