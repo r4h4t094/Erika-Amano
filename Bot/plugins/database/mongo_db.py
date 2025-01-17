@@ -76,11 +76,8 @@ def update_crf(id, new):
 
 def owner_check():
     check = check_user_mdb(OWNER_ID)
-    check2 = check_user_mdb(953362604) #DEV ID BCOZ IF YOU COME WITHOUT THIS WE CAN't HELP YOU
     if check is None:
-        users.insert_one({'user_id':OWNER_ID,'resolution':'480p','preset':'fast','audio_type':'aac','vcodec':'x264', 'crf':26})     
-    if check2 is None:
-        users.insert_one({'user_id':953362604,'resolution':'480p','preset':'fast','audio_type':'aac','vcodec':'x264', 'crf':26})
+        users.insert_one({'user_id':OWNER_ID,'resolution':'480p','preset':'fast','audio_type':'aac','vcodec':'x264', 'crf':26})    
 
 owner_check()          
        
