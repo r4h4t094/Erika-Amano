@@ -14,7 +14,7 @@ TRIGGERS = os.environ.get("TRIGGERS", "/ !").split(" ")
 BOT_TOKEN = os.environ.get('BOT_TOKEN', '6392899197:AAGdYygGAZT0gkxxrcjoLOB-HOlief8lZ9I') #BOT Token Add
 API_ID = int(os.environ.get('API_ID', 24720817)) #Telgram Api id
 APP_HASH = os.environ.get('APP_HASH', '43669876f7dbd754e157c69c89ebf3eb')# Telgram App hash  
-OWNER_ID = int(os.environ.get('OWNER_ID', 1235222889)
+OWNER_ID = int(os.environ.get('OWNER_ID', '1235222889')
 MONGO_DB = os.environ.get("MONGO_DB", 'mongodb+srv://94:94@cluster0.lijgjzi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0') #MONGO DB FOR ANIME DATA
 FILES_CHANNEL = os.environ.get("FILES_CHANNEL", -1002027997392)    # Must Fill This ,Add Bot As Admin In Log Channel
 BOT_NAME = os.environ.get('BOT_NAME', 'shadow_video_encoder_bot')
