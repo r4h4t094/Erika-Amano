@@ -241,7 +241,7 @@ async def callback_answer(client:Client, callback_query):
         await callback_query.message.edit(text, reply_markup=BUTTONS_PRESET) 
     elif 'about_dev' in callback_query.data:
         text = f'Hello `{callback_query.from_user.first_name}`,\n\n'
-        text += "I'm Sohail\nTo connect with me, Check Below Buttons"
+        text += "I'm RAHAT\nTo connect with me, Check Below Buttons"
         await callback_query.message.edit(text,reply_markup=BUTTONS_DEV)    
     await callback_query.answer('Your Query Processed.')   
               
